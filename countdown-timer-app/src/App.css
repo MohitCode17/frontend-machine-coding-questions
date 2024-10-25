@@ -1,0 +1,129 @@
+/* Remove input spinner buttons */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* App container styling */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2a2a72, #009ffd);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* Timer title */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Timer container */
+.timer_container {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+}
+
+/* Input container */
+.input_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.input_container > input {
+  width: 80px;
+  height: 60px;
+  font-size: 2rem;
+  border: 1px solid #ffffff60;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input_container > input::placeholder {
+  color: #ffffff60;
+}
+
+/* Time display */
+.input_container .time {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  color: #ffffff;
+}
+
+/* Divider between time units */
+.input_container_divider {
+  font-size: 4rem;
+  color: #ffffff60;
+}
+
+/* Button wrapper */
+.btn_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Button styles */
+.timer_btn {
+  background: #4a90e2;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(74, 144, 226, 0.4);
+  transition: all 0.3s ease;
+}
+
+.timer_btn:hover {
+  background: #0072ff;
+  box-shadow: 0 10px 20px rgba(0, 114, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .input_container > input {
+    width: 60px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .input_container .time {
+    font-size: 3rem;
+  }
+
+  .timer_btn {
+    padding: 0.7rem 1.5rem;
+  }
+}
