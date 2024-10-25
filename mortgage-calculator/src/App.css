@@ -1,0 +1,96 @@
+/* Remove input spinner buttons */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* App.css */
+.App {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input_wrapper p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.input_wrapper input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input_wrapper input:focus {
+  border-color: #5c6ac4;
+}
+
+.input_wrapper input::placeholder {
+  color: #bebdbd;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5c6ac4;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4b5ba5;
+}
+
+.output {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e8f0fe;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .App {
+    padding: 15px;
+    width: 90%;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .output {
+    font-size: 16px;
+  }
+}
