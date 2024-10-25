@@ -1,0 +1,79 @@
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.multi_btn {
+  padding: 12px 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.multi_btn:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion_container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.item_container {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.item_container:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item_top {
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item_qus {
+  margin: 0;
+}
+
+.action_btn {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.action_btn.rotate {
+  transform: rotate(45deg);
+}
+
+.item_ans {
+  color: #666;
+  padding-top: 15px;
+  padding-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .accordion_container {
+    width: 90%;
+  }
+
+  .action_btn {
+    margin-top: 10px;
+  }
+}
