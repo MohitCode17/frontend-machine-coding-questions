@@ -1,0 +1,124 @@
+/* App.css */
+.App {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* App.css */
+.suggestion_list {
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f5f7f7;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.suggestion_list::-webkit-scrollbar {
+  width: 0; /* Hide vertical scrollbar */
+  height: 0; /* Hide horizontal scrollbar */
+}
+
+/* Adjust existing list item styles */
+.list_item {
+  padding: 10px;
+  margin: 0; /* Remove margin for list items inside the suggestion container */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.list_item:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.02);
+}
+
+.bucket_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.bucket_item:hover {
+  background-color: #f8f9fa;
+}
+
+.checked_btn,
+.close_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.checked_btn:hover,
+.close_btn:hover {
+  color: #0056b3;
+}
+
+.strik {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .App {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .list_item {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .bucket_item {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
